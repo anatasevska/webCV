@@ -10,6 +10,9 @@
     top: 0;
     left: 0;
     animation: loader 2s;
+    -o-animation: loader 2s;
+    -moz-animation: loader 2s;
+    -webkit-animation: loader 2s;
     transition: ease-in-out 5s;
 }
 

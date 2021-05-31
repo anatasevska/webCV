@@ -117,12 +117,6 @@ Overflow:hidden cuts them off at the container, could not find another way :( */
         cursor: pointer;
         animation: ease-in-out 5s;
     }
-    .names-projects{
-        display: flex;
-        justify-content: space-between;
-        padding: 1rem;
-        color: aliceblue;
-    }
     .viewall{
         position: relative;
     }

@@ -101,7 +101,11 @@
     background: #F2E9E4;
     opacity: 0.8;
     left: 50%;
-    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-o-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
 }
 .hello-btn{
     color: #1d1d1d;

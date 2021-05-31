@@ -1,49 +1,11 @@
 /* APPLICATION */
 
-.commerce-img:hover{
-    transform: translateX(10%);
-    z-index: 2;
-    animation: slideIn 150s infinite alternate ease-in-out;
-}
-
-.reserveit-img:hover{
-    transform: translateX(-10%);
-    z-index: 2;
-    animation: slideOut 150s infinite alternate ease-in-out;
-}
-
-
-
 .hello-btn{
     position: relative;
     transition: all 600ms;
 }
-.hello-hover:hover{
-    background: transparent;
-    color: #F24C62;
-}
-.hello-hover:hover::before{
-    content: "";
-    width: 99%;
-    height: 2px;
-    background: #F24C62;
-    position: absolute;
-    top:100%;
-    left: 0;
-    animation: buttonDown 500ms;
-}
-.hello-hover:hover::after{
-    content: "";
-    width: 99%;
-    height: 2px;
-    background: #F24C62;
-    position: absolute;
-    bottom:100%;
-    left: 0;
-    animation: buttonUp 500ms;
-}
 
-/* HELLO BTN onClick */
+/* During effect */
 
 .helloBtn-effect{
     background: transparent;
@@ -58,6 +20,9 @@
     top:100%;
     left: 0;
     animation: buttonDown 500ms;
+    -o-animation: buttonDown 500ms;
+    -moz-animation: buttonDown 500ms;
+    -webkit-animation: buttonDown 500ms;
 }
 .helloBtn-effect::after{
     content: "";
@@ -68,11 +33,24 @@
     bottom:100%;
     left: 0;
     animation: buttonUp 500ms;
+    -o-animation: buttonUp 500ms;
+    -moz-animation: buttonUp 500ms;
+    -webkit-animation: buttonUp 500ms;
 }
+
+/* End of effect */
 
 .helloBtn-effectFinish::after{
     animation: buttonEffect-left 1s;
+    -o-animation: buttonEffect-left 1s;
+    -moz-animation: buttonEffect-left 1s;
+    -webkit-animation: buttonEffect-left 1s;
     transform: rotate(0);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
     width: 20%;
     left:-20%;
     bottom:50%;
@@ -80,7 +58,15 @@
 }
 .helloBtn-effectFinish::before{
     animation: buttonEffect-right 1s;
+    -o-animation: buttonEffect-right 1s;
+    -moz-animation: buttonEffect-right 1s;
+    -webkit-animation: buttonEffect-right 1s;
     transform: rotate(0);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
     width: 20%;
     left:100%;
     top:50%;
@@ -91,15 +77,74 @@
 .submit-btn{
     transition: ease 200ms;
 }
-.submit-btn:hover{
-    transform: translateY(-8%);
-    -moz-transform: translateY(-8%);
-    -webkit-transform: translateY(-8%);
-    -o-transform: translateY(-8%);
-    -ms-transform: translateY(-8%);
-    opacity: .89;
-}
 
+
+/* HOVER // DESKTOPS ONLY */
+
+@media only screen and (min-width:1150px){
+
+    .commerce-img:hover{
+        transform: translateX(10%);
+        z-index: 2;
+        animation: slideIn 150s infinite alternate ease-in-out;
+        -o-animation:  slideIn 150s infinite alternate ease-in-out;
+        -moz-animation:  slideIn 150s infinite alternate ease-in-out;
+        -webkit-animation:  slideIn 150s infinite alternate ease-in-out;
+    }
+    
+    .reserveit-img:hover{
+        -moz-transform: translateX(-10%);
+        -webkit-transform: translateX(-10%);
+        -o-transform: translateX(-10%);
+        -ms-transform: translateX(-10%);
+        transform: translateX(-10%);
+        z-index: 2;
+        animation: slideOut 150s infinite alternate ease-in-out;
+        -o-animation:  slideOut 150s infinite alternate ease-in-out;
+        -moz-animation:  slideOut 150s infinite alternate ease-in-out;
+        -webkit-animation:  slideOut 150s infinite alternate ease-in-out;
+    }
+    
+    .hello-hover:hover{
+        background: transparent;
+        color: #F24C62;
+    }
+    .hello-hover:hover::before{
+        content: "";
+        width: 99%;
+        height: 2px;
+        background: #F24C62;
+        position: absolute;
+        top:100%;
+        left: 0;
+        animation: buttonDown 500ms;
+        -o-animation:  buttonDown 500ms;
+        -moz-animation:  buttonDown 500ms;
+        -webkit-animation:  buttonDown 500ms;
+    }
+    .hello-hover:hover::after{
+        content: "";
+        width: 99%;
+        height: 2px;
+        background: #F24C62;
+        position: absolute;
+        bottom:100%;
+        left: 0;
+        animation: buttonUp 500ms;
+        -o-animation:  buttonUp 500ms;
+        -moz-animation:  buttonUp 500ms;
+        -webkit-animation:  buttonUp 500ms;
+    }
+    
+    .submit-btn:hover{
+        transform: translateY(-8%);
+        -moz-transform: translateY(-8%);
+        -webkit-transform: translateY(-8%);
+        -o-transform: translateY(-8%);
+        -ms-transform: translateY(-8%);
+        opacity: .89;
+    }
+}
 
 /* ANIMATIONS */
 

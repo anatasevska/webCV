@@ -17,10 +17,12 @@ function init(){
 init();
 
 // TOGGLE MENU 
-//Ideally I would've kept a traditional menu on the desktop, no icons, since it's a better UX 
-//Time made me do it as simple as I did 
+//Ideally I would've kept a traditional menu without a hamburger
+//icon on the desktok since it's better UX 
+//Time made me do it as simple as I did. 
 var menu=document.getElementById('menu');
 var menuItems=document.getElementById('nav');
+
 function toggleMenu(){
     if(menu.classList.contains('close')){
         menu.classList.remove('close');
