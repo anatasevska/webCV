@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Ana T.</title>
+</head>
+<body>
+<div class="loader"></div>
+<div class="content">
+    <header class="header">
+        <a href="#" class="logo"><img src="img/A-Logo.svg" alt="logo" class="logo-img"></a>
+        <nav id="nav" class="nav-links hide">
+            <a id="clickable" href="#" class="home-nav clickable">Home</a>
+            <a id="clickable" href="#about" class="about-nav clickable" clickable>About</a>
+            <div class="projects-nav">
+                <a href="#" id="project-menuItem" class="project-title ">Projects</a>
+                <div id="project-items" class="projects">
+                    <a href="https://wonderful-varahamihira-ef5739.netlify.app/" target="_blank" class="reserveit-nav">ReserveIT</a>
+                    <a href="https://objective-lumiere-3e31c0.netlify.app/" target="_blank" class="ecommerce-nav">E-Commerce</a>
+                </div>
+            </div>
+            <a id="clickable" href="#contact" class="contact clickable">Contact</a>
+        </nav>
+        <div onclick=toggleMenu() id="menu"class="menu">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </header>
+    <div class="landing">
+        <div class="intro">
+            <div class="red-text hi">Hi.</div>
+            <div class="big-text">I am Ana and I code</div>
+            <div class="big-text bold-text">experiences</div>
+        </div>
+        <img src="img/rectangs.svg" alt="Rectangles" class="rectangs">
+        <span class="point hide-desktop"></span>
+    </div>
+    <div id="about" class="about-container">
+        <div class="red-text bold-text big-text">About</div>
+        <div class="about-info">
+                <div class="location-info about">
+                    <span class="line"></span>
+                    <div>Delcevo, North Macedonia</div>
+                </div>
+                <div class="studies-info about">
+                    <span class="line"></span>
+                    <div>Student at the Faculty of Computer Science and Engineering</div>
+                </div>
+                <div class="skills-info about">
+                    <span class="line"></span>
+                    <div>Focusing on Front End Development with passion for UX</div>
+                </div>
+        </div>
+    </div>
+    <div class="projects-container">
+        <div class="red-text bold-text big-text">Projects</div>
+        <div class="img-projects flex-center">
+                <img  src="img/ecommerce-project.png" alt="E-Commerce" id="ECproject-img" class="commerce-img">
+                <img src="img/reserveit-project.png" alt="ReserveIt" id="RIproject-img" class="reserveit-img">
+        </div>
+        <!-- Plan for .viewall was to have a seperate page to show off all my projects.
+        No time, so decided to stick to a one page layout. It looks pretty though :D -->
+        <a href="#" class="viewall">
+            <div class="viewall-text">View All</div>
+            <img src="img/Arrow.svg" alt="arrow" class="arrow">
+        </a>
+    </div>
+    <div class="work-container flex-center">
+        <div class="work-title red-text big-text bold-text">Work with me</div>
+        <div class="work-p">I am an ambitious individual,
+             always excited to challenge myself and expand my knowledge 
+             as much as possible.
+             I work great in a team enviroment, as well as on my own.
+         </div>
+         <div class="hello-btn btn bold-text hello-hover">Hello World</div>
+    </div>
+    <div id="contact" class="contact-container flex-center">
+        <div class="red-text bold-text big-text">Get in touch</div>
+        <!-- Form is made using netlify, it does not work locally, however it is fully
+        functional. Normally I would go with something like EmailJS, but in order to keep
+        this as simple as possible I gave this a try. -->
+        <form method="POST" data-netlify="true" class="contact-form">
+            <div class="info">
+                <input type="text" name="name" class="field personal-info" placeholder="Name" required/>
+                <input type="email" name="email" class="field personal-info" placeholder="Email" required/>
+            </div>
+            <textarea name="message" id="msg" cols="30" rows="6" class="field msg-field" placeholder="Message"></textarea>
+            <div>
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+            <input type="submit" value="Send Message" class="submit-btn btn bold-text" />
+        </form>
+    </div>
+</div>
+</body>
+</html>
+<script src="app.js"></script>

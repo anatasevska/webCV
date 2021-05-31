@@ -1,0 +1,170 @@
+/* MEDIUM DEVICES  */
+@media only screen and (min-width:580px){
+    body{
+        font-size: 1.3rem;
+    }
+    .hi{
+        font-size: 7rem;
+    }
+    .big-text{
+        font-size: 2.39rem;
+    }   
+    .rectangs{
+           width: 60%;
+       }
+    
+    /* ABOUT SECTION */
+
+    .about-container{
+        margin-top: 27%;
+    }
+
+    /* WORK WITH ME SECTION */
+
+    .work-p{
+        padding: 0 15%;
+    }
+    .hello-btn{
+        font-size: 1rem;
+    }
+
+    /* CONTACT SECTION */
+
+    .contact-form{
+        width: 100%;
+    }
+    .info{
+        flex-direction: row;
+    }
+    .field{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:680px){  
+    .rectangs{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width:825px){
+    body{
+        font-size: 1.5rem;
+    }
+    .hi{
+        font-size: 8.6rem;
+    }
+    .big-text{
+        font-size: 3rem;
+    }   
+    .rectangs{
+        width: 45%;
+    }
+    
+    /* ABOUT SECTION */
+
+    .about-container{
+        margin-top: 20%;
+    }
+
+    /* CONTACT SECTION */
+
+    .submit-btn{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width:971px) {
+
+    body{
+        padding: 0 2rem;
+    }
+    .hide-desktop{
+        display: none;
+    }
+    .landing{
+        padding:0;
+    }
+    .hi{
+        font-size: 10rem;
+    }
+    .rectangs{
+       top:10%;
+       width: 45vw;
+    }
+    
+    /* ABOUT SECTION */
+
+    .about-container{
+        width: 55%;
+        margin: 20% 0 10rem;
+    }
+    .about{
+        gap:1.5rem;
+    }
+
+    /* PROJECTS SECTION */
+    
+
+    
+ /* Wanted to keep my project images fully, cut off by the screen itself
+Overflow:hidden cuts them off at the container, could not find another way :( */
+    .img-projects{
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    .reserveit-img,.commerce-img{
+        cursor: pointer;
+        animation: ease-in-out 5s;
+    }
+    .names-projects{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        color: aliceblue;
+    }
+    .viewall{
+        position: relative;
+    }
+    .viewall::before{
+        content: "";
+        display: block;
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        background: #8C8C8C;
+        top:-.5rem;
+    }
+    .viewall::after{
+        content: "";
+        display: block;
+        width: 2px;
+        height: 200px;
+        position: absolute;
+        background: #8C8C8C;
+        bottom: 2.45rem;
+    }
+
+    /* WORK WITH ME SECTION */
+    .work-container{
+        margin: 10rem auto;
+        padding: 3% 13%;
+    }
+    .hello-btn{
+        font-size: 1.2rem;
+    }
+    .work-title::before{
+        width: 16%;
+    }
+    /* CONTACT SECTION */
+
+    .contact-form{
+        width: 100%;
+    }
+    .field{
+        padding: .8rem;
+    }
+    .submit-btn{
+        font-size: 1.2rem;
+    }
+}

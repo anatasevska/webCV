@@ -1,0 +1,33 @@
+.loader{
+    overflow-x: hidden;
+
+}
+.loader{
+    width: 100%;
+    height: 100vh;
+    background: #FF4C64;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s;
+    transition: ease-in-out 5s;
+}
+
+
+@keyframes loader{
+    from{
+        opacity: 1;
+        clip-path: polygon(67% 70%, 98% 100%, 100% 100%, 68% 68%);
+        background: #FF4C64;
+    }
+    50%{
+        clip-path: polygon(42% 44%, 98% 100%, 100% 100%, 55% 60%);
+        opacity: .8;  
+    }
+    80%{
+        clip-path: polygon(14% 19%, 98% 100%, 100% 100%, 0 0);
+    }   
+    to{
+        background:transparent;
+    }
+}
