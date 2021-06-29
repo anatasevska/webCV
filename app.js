@@ -54,15 +54,23 @@ function closeMenu(){
 // SHOW PROJECTS SUBMENU
 var projectTitle=document.querySelector('#project-menuItem');
 var projectItems=document.getElementById('project-items');
+var arrow = document.querySelector('.fa-chevron-down');
 
 projectTitle.addEventListener('click', showProjects, false);
 
 function showProjects(){
-    if (projectItems.style.display === "none") {
-        projectItems.style.display = "flex";
-      } else {
+    if (projectItems.style.display == "flex") {
         projectItems.style.display = "none";
+      } else {
+        projectItems.style.display = "flex";
       }
+    
+    if(arrow.classList.contains('open-arrow')){
+        arrow.classList.remove('open-arrow');
+    }
+    else{
+        arrow.classList.add('open-arrow');
+    }
 }
 
 // PROJECTS LINKS

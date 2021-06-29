@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/A-Logo.svg" type="image/x-icon">
-    <title>Ana T.</title>
+    <script src="https://kit.fontawesome.com/11990368f8.js" crossorigin="anonymous"></script>
+    <title>Ana T.</title>  
 </head>
 <body>
 <div class="loader"></div>
@@ -18,7 +19,10 @@
             <a id="clickable" href="#" class="home-nav clickable">Home</a>
             <a id="clickable" href="#about" class="about-nav clickable" clickable>About</a>
             <div class="projects-nav">
-                <a href="#" id="project-menuItem" class="project-title ">Projects</a>
+                <div class="projects-head">
+                    <a href="#" id="project-menuItem" class="project-title ">Projects</a>
+                <i class="fas fa-chevron-down"></i>
+                </div>
                 <div id="project-items" class="projects">
                     <a href="https://wonderful-varahamihira-ef5739.netlify.app/" target="_blank" class="reserveit-nav">ReserveIT</a>
                     <a href="https://objective-lumiere-3e31c0.netlify.app/" target="_blank" class="ecommerce-nav">E-Commerce</a>
@@ -62,8 +66,6 @@
                 <img  src="img/ecommerce-project.png" alt="E-Commerce" id="ECproject-img" class="commerce-img">
                 <img src="img/reserveit-project.png" alt="ReserveIt" id="RIproject-img" class="reserveit-img">
         </div>
-        <!-- Plan for .viewall was to have a seperate page to show off all my projects.
-        No time, so decided to stick to a one page layout. It looks pretty though :D -->
         <a href="#" class="viewall">
             <div class="viewall-text">View All</div>
             <img src="img/Arrow.svg" alt="arrow" class="arrow">
@@ -80,12 +82,6 @@
     </div>
     <div id="contact" class="contact-container flex-center">
         <div class="red-text bold-text big-text">Get in touch</div>
-        <!-- Form is made using netlify, it does not work locally, however it is fully
-        functional. Normally I would go with something like EmailJS, but in order to keep
-        this as simple as possible I gave this a try.
-        I can see all form submissions on my Netflify account, but in order for you to confirm 
-        that it works, upon form submission you will receive an email notification on the email
-        that you provided.-->
         <form method="POST" data-netlify="true" class="contact-form">
             <div class="info">
                 <input type="text" name="name" class="field personal-info" placeholder="Name" required/>
